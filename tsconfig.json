@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES2021", // or a suitable version
+        "module": "commonjs", // ensure this is set for Node.js
+        "lib": ["es2021","dom"], // or "esnext"
+        "types": ["node"], // Add this line to include Node.js types
+        "strict": true, // or any other settings you prefer
+        "resolveJsonModule": true,
+        "esModuleInterop": true, // Allows default imports from CommonJS modules
+        "skipLibCheck": true // Skip type checking of declaration files
+    },
+    "include": [
+        "src/**/*.ts" // Adjust this to include your TypeScript files
+    ]
+}
